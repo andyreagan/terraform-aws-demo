@@ -1,4 +1,4 @@
-resource "aws_instance" "marketing_insights_platform" {
+resource "aws_instance" "ds_seminar_demo" {
   ami                          = "${var.aws_instance_ami}"
   instance_type                = "${var.aws_instance_type}"
   subnet_id                    = "${element(list(data.aws_subnet.priv_az1.id, data.aws_subnet.priv_az2.id, data.aws_subnet.priv_az3.id), count.index % 3)}"
