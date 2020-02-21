@@ -1,0 +1,10 @@
+# Module directory
+.terraform/
+.env/
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# TF AWS module
+terraform-provider-aws*
